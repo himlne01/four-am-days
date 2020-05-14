@@ -1,0 +1,125 @@
+/*mobile*/
+* {
+  color: black;
+  font-family: Poppins;
+  text-align: center;  
+  border: 0px;
+  margin: 0;
+}
+.hangzhou { 
+  width: 100%;
+  height: 193px; /*auto*/
+  opacity: 0.5;
+}
+.allIndex {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.aboutside {
+  background-color: white;
+  opacity: .7;
+  display: inline-table;
+  margin: auto;
+}
+.sideblog {
+  margin:.5em;
+  border: 1px rgb(57, 39, 49) solid;
+}
+.mainbody {
+  width: 99%; 
+  padding: 1%;
+  display: inline-block;
+}
+.mui-appbar {
+  background-color: rgb(179, 217, 255);
+}
+.tbl {
+  width: inherit;
+}
+.td {
+  padding: .5em;
+}
+h1 {
+  font-family: Satisfy;
+  font-size: 55px;
+  margin: .5em 0;
+}
+h2 {
+  margin-bottom: 1em;
+  background: no-repeat;
+}
+h3 {
+  margin: .75em;
+}
+h4 {
+  padding-top: 10px;
+}
+p {
+  text-align: left;
+  margin: 1em;
+}
+th, td {
+  font-family: 'Anonymous Pro', monospace;
+  color: white;
+  font-size: 20px;
+}
+a {
+  font-family: 'Anonymous Pro', monospace;
+  color: rgb(57, 39, 49);
+  font-size: 20px;
+}
+a:hover {
+  color: white;
+}
+.b {
+  background-color: #e99f70;
+}
+.c {
+  background-color: #e17e5f;
+}
+.d {
+  background-color: #c09e9d;
+}
+li {
+  text-align: left;
+}
+footer {
+  right: 20;
+  bottom: 0;
+}
+footer p {
+  text-align: right;
+  margin-bottom: 10px;
+  padding:  5px;
+  background-color: white; /*rgb(251, 238, 236);*/
+  opacity: .7;
+  display: inline-block;
+}
+/*tablet*/
+@media screen and (min-width: 768px) {
+  .aboutside {
+    width: 675px; 
+  }
+  .mainbody {
+    width: 725px;
+  }
+  .hangzhou {
+    height: 490px; /*60%*/
+  }
+}
+/*desktop*/
+@media screen and (min-width: 1225px) {
+  .aboutside {
+    width: 275px;
+    padding: 1%;
+  }
+  .mainbody {
+    width: 865px; 
+    display: inline-table;
+  }
+  .hangzhou {
+    height: 100%;
+  }
+}

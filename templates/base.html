@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day Made | Nell Himlie</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Nell Himlie">
+        <meta name="description" content="A Personal Travel Blog">
+        <!-- load MUI -->
+        <link href="//cdn.muicss.com/mui-0.10.1/css/mui.min.css" rel="stylesheet" type="text/css" />
+        <script src="//cdn.muicss.com/mui-0.10.1/js/mui.min.js"></script>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
+        <link href="http://i2.wp.com/japanlover.me/goodies/kawaii/02-icons/kawaii-sky-04.png" type="image/x-icon" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="mui-appbar">
+            <table width="100%">
+              <tr style="vertical-align:middle;">
+                <td class="mui--appbar-height">
+                    <a href="../"><h1>Day Made</h1></a> 
+                </td>
+                <td class="mui--appbar-height" align="right">
+                    <h3>You made my day</h3>
+                </td>
+                <td class="mui--appbar-height" >
+                    <form action="/search" method="POST">
+                        <input class="mui--text-right" type="text" name="searchith" required>
+                        <input type="submit" class="mui-btn mui-btn--small mui-btn--primary" value="Search Themes">
+                    </form>
+                </td>
+              </tr>
+            </table>
+          </div>
+        {% block content %}  
+        {% endblock %}
+        <footer>
+            <p>&copy; 2019 NELLAY_JOY</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+    </body>
