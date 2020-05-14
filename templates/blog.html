@@ -3,33 +3,7 @@
 {% block content %} 
 <div>
     <div class='mainbody'>
-        <h3>{{ specs['journal'][0][1] }}</h3>
-        <h6 class="mui--text-right">Date & Themes | {{ specs['journal'][0][0] }}</h6>
-        {% for n in specs['journal'][0][2].split('\\n') %}
-        <h6 class="mui--text-right">{{ n }}</h6>
-        {% endfor %}
+        <h3>{{ specs['journal'][0] }}</h3>
         
-        {% for m in specs['journal'][0][3].split('\\n') %}
-        <p>{{ m }}</p>
-        {% endfor %}
-        
-    </div>
-    <div class="aboutside">
-        <div class='sideblog'>
-            <h4>Word of the Day</h4>  
-            <p>{{ specs['words'][0][1] }}: {{ specs['words'][0][2] }}</p>
-            <p>{{ specs['words'][0][3] }}</p>
-        </div>
-        <div class='sideblog'>
-            <h4 >Thorn, Rose, Bud</h4>
-            <img src="../static/thorn.png" alt="a thorn reps the bad" class=flowers>
-            <p>{{ specs['rbt'][0][1] }}</p>
-            <img src="../static/rose.png" alt="a rose reps the good" class=flowers>
-            <p>{{ specs['rbt'][0][2] }}</p>
-            <img src="../static/bud.png" alt="a bud reps what I'm looking forward to" class=flowers>
-            <p>{{ specs['rbt'][0][3] }}</p>
-        </div>
-    </div>
-</div>
 {% endblock %}
 
