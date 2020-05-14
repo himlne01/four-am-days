@@ -26,11 +26,14 @@ def index():
 
 @app.route("/blog/<string:theDate>")
 def journal(theDate):
-    print(theDate)
-    # query_words = "SELECT * FROM wordofday WHERE date = '" + theDate + "';"
-    # query_journal = "SELECT * FROM journaling WHERE date = '" + theDate + "';"
-    # query_rbt = "SELECT * FROM flowers WHERE date = '" + theDate + "';"
-    # big={'words': get_data_from_db(query_words),'journal':get_data_from_db(query_journal), 'rbt':get_data_from_db(query_rbt)}
+    query_words = "SELECT * FROM wordofday WHERE date = '" + theDate + "';"
+    query_journal = "SELECT * FROM journaling WHERE date = '" + theDate + "';"
+    query_rbt = "SELECT * FROM flowers WHERE date = '" + theDate + "';"
+    big={'words': get_data_from_db(query_words),'journal':get_data_from_db(query_journal), 'rbt':get_data_from_db(query_rbt)}
+    print(big['words'][0][0])
+    print(big['words'][0][1])
+    print(big['words'][0][2])
+    print(big['words'][0][3])
     return render_template("/base.html") #, specs=big) 
 
 
