@@ -4,13 +4,15 @@
 <div>
     <div class='mainbody'>
         <h3>Search</h3>
-        <p>Please return to the <a href="../">calendar</a> and look for the day.</p>
         <ul>
             {% for o in options[0] %} <!-- For all the dates with results -->
+            {% if o != "This theme is not in use" %}
+            <li><a href="blog/{{ o }}">{{ o }}</a></li>
+            {% else %}
             <li>{{ o }}</li>
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
 </div>
 {% endblock %}
-
