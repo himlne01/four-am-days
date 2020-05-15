@@ -50,10 +50,13 @@ def index():
             return render_template("search.html", options=[[("This theme is not in use")]])
 
 
-@app.route("/blog/<string:theDate>")
+@app.route("/blog/<string:theDate>", methods=["GET"])
 def journal(theDate):
-    query_words = "SELECT * FROM wordofday WHERE date = '" + theDate + "';"
-    query_journal = "SELECT * FROM journaling WHERE date = '" + theDate + "';"
-    query_rbt = "SELECT * FROM flowers WHERE date = '" + theDate + "';"
-    big={'words': get_data_from_db(query_words),'journal':get_data_from_db(query_journal), 'rbt':get_data_from_db(query_rbt), 'thorn': getPhoto('thorn'), 'rose':getPhoto('rose'),'bud':getPhoto('bud')}
-    return render_template("blog.html", specs=big) 
+    if request.method == "GET":
+        query_words = "SELECT * FROM wordofday WHERE date = '" + theDate + "';"
+        query_journal = "SELECT * FROM journaling WHERE date = '" + theDate + "';"
+        query_rbt = "SELECT * FROM flowers WHERE date = '" + theDate + "';"
+
+        # return render_template("blog.html", words=get_data_from_db(query_words), journal=get_data_from_db(query_journal), rbt=get_data_from_db(query_rbt)) 
+        big={'words': get_data_from_db(query_words),'journal':get_data_from_db(query_journal), 'rbt':get_data_from_db(query_rbt)} #, 'thorn': getPhoto('thorn'), 'rose':getPhoto('rose'),'bud':getPhoto('bud')}
+        return render_template("blog.html", specs=big) 
