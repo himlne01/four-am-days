@@ -28,7 +28,7 @@
 }
 .sideblog {
   margin:.5em;
-  border: 1px rgb(57, 39, 49) solid;
+  border: 1px #392731 solid;
 }
 .mainbody {
   width: 99%; 
@@ -36,7 +36,7 @@
   display: inline-block;
 }
 .mui-appbar {
-  background-color: rgb(179, 217, 255);
+  background-color: #b0e1ed;
 }
 .tbl {
   width: inherit;
