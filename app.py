@@ -16,15 +16,15 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 #         return(photo.small)
 
 def get_data_from_db(query: str) -> list:
-    # conn = sqlite3.connect('day_tabase.sqlite3')
+    conn = sqlite3.connect('day_tabase.sqlite3')
 
-    conn = psycopg2.connect(
-        database = "dgju4sm6llfrr",
-        user="tlcqqkcatmpplu",
-        password=SECRET_KEY,
-        host="ec2-34-200-72-77.compute-1.amazonaws.com",
-        port="5432"
-    )
+    # conn = psycopg2.connect(
+    #     database = "dgju4sm6llfrr",
+    #     user="tlcqqkcatmpplu",
+    #     password=SECRET_KEY,
+    #     host="ec2-34-200-72-77.compute-1.amazonaws.com",
+    #     port="5432"
+    # )
     cur = conn.cursor()
     cur.execute(query)
     rows = cur.fetchall()
