@@ -18,7 +18,7 @@
   width: 100%;
 }
 .searching {
-  visibility: hidden;
+  display: none;
 }
 .aboutside {
   background-color: white;
@@ -103,7 +103,7 @@ footer p {
 /*tablet*/
 @media screen and (min-width: 768px) {
   .searching {
-    visibility: visible;
+    display: contents;
   }
   .aboutside {
     width: 675px; 
