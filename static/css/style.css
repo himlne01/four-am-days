@@ -38,6 +38,9 @@
 .mui-appbar {
   background-color: #b0e1ed;
 }
+.search-form {
+  padding: 10px;
+}
 .tbl {
   width: inherit;
 }
