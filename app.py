@@ -30,8 +30,12 @@ def get_data_from_db(query: str) -> list:
     rows = cur.fetchall()
     return rows
 
-@app.route("/", methods=["GET","POST"])
+@app.route("/")
 def index():
+    return render_template("index.html")
+
+@app.route("/blog", methods=["GET","POST"])
+def blog():
     if request.method == "GET":
         return render_template("base.html")  
     else:  
