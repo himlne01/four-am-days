@@ -32,7 +32,8 @@ def get_data_from_db(query: str) -> list:
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("maintenance.html")
+    # return render_template("index.html")
 
 @app.route("/blog", methods=["GET","POST"])
 def blog():
@@ -63,4 +64,4 @@ def journal(theDate):
 
         # return render_template("blog.html", words=get_data_from_db(query_words), journal=get_data_from_db(query_journal), rbt=get_data_from_db(query_rbt)) 
         big={'words': get_data_from_db(query_words),'journal':get_data_from_db(query_journal), 'rbt':get_data_from_db(query_rbt)} #, 'thorn': getPhoto('thorn'), 'rose':getPhoto('rose'),'bud':getPhoto('bud')}
-        return render_template("blog.html", specs=big) 
+        return render_template("blog.html", specs=big)
