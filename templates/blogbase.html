@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day Made | Nell Himlie</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Nell Himlie">
+        <meta name="description" content="A Personal Travel Blog">
+        <!-- load MUI -->
+        <link href="//cdn.muicss.com/mui-0.10.1/css/mui.min.css" rel="stylesheet" type="text/css" />
+        <script src="//cdn.muicss.com/mui-0.10.1/js/mui.min.js"></script>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
+        <link href="../static/made.png" type="image/x-icon" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="mui-appbar">
+            <table width="100%">
+              <tr style="vertical-align:middle;">
+                <td class="mui--appbar-height">
+                    <a href="../"><h1>Day Made</h1></a> 
+                </td>
+                <td class="mui--appbar-height" align="right">
+                    <h3>You made my day</h3>
+                </td>
+                <td class="mui--appbar-height searching">
+                    <form action="/" method="POST" class="search-form">
+                        <select name=category>
+                          {% for ops in ['titles','themes','entry'] %}
+                          <option name="{{ ops }}" value="{{ ops }}">{{ ops }}</option>
+                          {% endfor %}
+                        </select>
+                          <input class="mui--text-right" type="text" name="searchith" required>
+                          <input type="submit" class="mui-btn mui-btn--small mui-btn--primary" value="Search">
+                      </form>
+                </td>
+              </tr>
+            </table>
+          </div>
+        {% block content %}  
+        {% endblock %}
+        <footer>
+            <a href="https://www.linkedin.com/in/nell-himlie">
+              <img alt="linkedin, Nell Himlie" src="../static/linkedin.png"
+              width="40" height="40">
+           </a>
+            <p>&copy; 2019 NELL_JOY</p>
+            <a href="https://github.com/himlne01">
+              <img alt="github, Nell Himlie" src="../static/github.png"
+              width="40" height="40">
+           </a>
+        </footer>
+    </body>
+</html>

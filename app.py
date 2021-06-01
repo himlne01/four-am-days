@@ -33,7 +33,7 @@ def get_data_from_db(query: str) -> list:
 @app.route("/", methods=["GET","POST"])
 def index():
     if request.method == "GET":
-        return render_template("index.html")  
+        return render_template("base.html")  
     else:  
         theCategory = request.form.get("category")
         searching_for = request.form.get("searchith")

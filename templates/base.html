@@ -17,42 +17,289 @@
         <link href="../static/made.png" type="image/x-icon" rel="shortcut icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <div class="mui-appbar">
-            <table width="100%">
-              <tr style="vertical-align:middle;">
-                <td class="mui--appbar-height">
-                    <a href="../"><h1>Day Made</h1></a> 
-                </td>
-                <td class="mui--appbar-height" align="right">
-                    <h3>You made my day</h3>
-                </td>
-                <td class="mui--appbar-height searching">
-                    <form action="/" method="POST" class="search-form">
-                        <select name=category>
-                          {% for ops in ['titles','themes','entry'] %}
-                          <option name="{{ ops }}" value="{{ ops }}">{{ ops }}</option>
-                          {% endfor %}
-                        </select>
-                          <input class="mui--text-right" type="text" name="searchith" required>
-                          <input type="submit" class="mui-btn mui-btn--small mui-btn--primary" value="Search">
-                      </form>
-                </td>
+  <body>
+    <img src="../static/hangzhou.jpg" alt="Hangzhou" class=hangzhou>
+    <div class='allIndex'>
+      <header>
+        <table width="100%">
+          <tr style="vertical-align:middle;">
+            <td class="mui--appbar-height" align="center">
+                <h1>Day Made</h1>
+            </td>
+            <td class="mui--appbar-height" align="center">
+                <h3>You made my day</h3>
+            </td>
+            <td class="mui--appbar-height searching" >
+              <form action="/" method="POST">
+                <select name=category>
+                  {% for ops in ['titles','themes','entry'] %}
+                  <option name="{{ ops }}" value="{{ ops }}">{{ ops }}</option>
+                  {% endfor %}
+                </select>
+                  <input class="mui--text-right" type="text" name="searchith" required>
+                  <input type="submit" class="mui-btn mui-btn--small mui-btn--primary" value="Search">
+              </form>
+            </td>
+          </tr>
+        </table>
+      </header>
+      <div class="aboutside">
+        <h4 class='side'>An Introduction</h4>  
+        <p class='side mui--no-user-select'>Dear Family, Clustermates, Teammates, and Friends;<br><br>As 2019 continues on, I will keep you all updated with this bullet journal. I will write when I can. But summer comes first.<br><br>This 日记, riji (journal, literally day + remember), will include some deep thoughts. She is just a girl recording her discoveries about the world.<br><br>With Love, Nell</p>
+      </div>
+      <div class="mainbody">
+        <div class="table-responsive tbl">
+          <table class="table">
+              <tr id='june'>
+                <th class='c'>June</th>
+                <td class='d'><a class='d n' href="blog/19-06-01">01</a></td>
+                <td class='b'><!--<a class='b' href="">-->02<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->03<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->04<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->05<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->06<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->07<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->08<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->09<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->10<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->11<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->12<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->13<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->14<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->15<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->16<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->17<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->18<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->19<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->20<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->21<!--</a>--></td>
+                <td class='d'><a class='d n' href="blog/19-06-22">22</a></td>
+                <td class='b'><!--<a class='b' href="">-->23<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->24<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->25<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->26<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->27<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->28<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->29<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->30<!--</a>--></td>
               </tr>
-            </table>
-          </div>
-        {% block content %}  
-        {% endblock %}
-        <footer>
-            <a href="https://www.linkedin.com/in/nell-himlie">
-              <img alt="linkedin, Nell Himlie" src="../static/linkedin.png"
-              width="40" height="40">
-           </a>
-            <p>&copy; 2019 NELL_JOY</p>
-            <a href="https://github.com/himlne01">
-              <img alt="github, Nell Himlie" src="../static/github.png"
-              width="40" height="40">
-           </a>
-        </footer>
-    </body>
+              <tr id='july'>
+                <th class='c'>July</th>
+                <td class='d'><!--<a class='d' href="">-->01<!--</a>--></td>
+                <td class='b'><a class='b n' href="blog/19-07-02">02</a></td>
+                <td class='c'><!--<a class='c' href="">-->03<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->04<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->05<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->06<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->07<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->08<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->09<!--</a>--></td>
+                <td class='d'><!--<a class='d n' href="blog/19-07-10">-->10<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->11<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->12<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->13<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->14<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->15<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->16<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->17<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->18<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->19<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->20<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->21<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->22<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->23<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->24<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->25<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->26<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->27<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->28<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->29<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->30<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->31<!--</a>--></td>
+              </tr>
+              <tr id='aug'>
+                <th class='c'>Aug</th>
+                <td class='d'><!--<a class='d' href="">-->01<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->02<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->03<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->04<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->05<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->06<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->07<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->08<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->09<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->10<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->11<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->12<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->13<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->14<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->15<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->16<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->17<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->18<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->19<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->20<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->21<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->22<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->23<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->24<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->25<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->26<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->27<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->28<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->29<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->30<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->31<!--</a>--></td>
+              </tr>
+              <tr id='sept'>
+                <th class='c'>Sept</th>
+                <td class='d'><!--<a class='d' href="">-->01<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->02<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->03<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->04<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->05<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->06<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->07<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->08<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->09<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->10<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->11<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->12<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->13<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->14<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->15<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->16<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->17<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->18<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->19<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->20<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->21<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->22<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->23<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->24<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->25<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->26<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->27<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->28<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->29<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->30<!--</a>--></td>
+              </tr>
+              <tr id='oct'>
+                <th class='c'>Oct</th>
+                <td class='d'><!--<a class='d' href="">-->01<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->02<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->03<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->04<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->05<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->06<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->07<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->08<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->09<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->10<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->11<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->12<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->13<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->14<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->15<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->16<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->17<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->18<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->19<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->20<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->21<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->22<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->23<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->24<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->25<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->26<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->27<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->28<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->29<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->30<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->31<!--</a>--></td>
+              </tr>
+              <tr id='nov'>
+                <th class='c'>Nov</th>
+                <td class='d'><!--<a class='d' href="">-->01<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->02<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->03<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->04<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->05<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->06<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->07<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->08<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->09<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->10<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->11<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->12<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->13<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->14<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->15<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->16<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->17<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->18<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->19<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->20<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->21<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->22<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->23<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->24<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->25<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->26<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->27<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->28<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->29<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->30<!--</a>--></td>
+              </tr>
+              <tr id='dec'>
+                <th class='c'>Dec</th>
+                <td class='d'><!--<a class='d' href="">-->01<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->02<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->03<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->04<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->05<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->06<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->07<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->08<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->09<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->10<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->11<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->12<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->13<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->14<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->15<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->16<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->17<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->18<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->19<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->20<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->21<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->22<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->23<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->24<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->25<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->26<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->27<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->28<!--</a>--></td>
+                <td class='b'><!--<a class='b' href="">-->29<!--</a>--></td>
+                <td class='c'><!--<a class='c' href="">-->30<!--</a>--></td>
+                <td class='d'><!--<a class='d' href="">-->31<!--</a>--></td>
+              </tr>
+          </table>
+        </div>
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441105.500264125!2d119.89169242595658!3d30.261685452555447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x344bb629439aaa99%3A0xa7bfd183824de83a!2sHangzhou%2C+Zhejiang%2C+China!5e0!3m2!1sen!2sus!4v1559097057554!5m2!1sen!2sus" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+      </div>
+      <footer>
+        <a href="https://www.linkedin.com/in/nell-himlie">
+          <img alt="linkedin, Nell Himlie" src="../static/linkedin.png"
+          width="40" height="40">
+       </a>
+        <p>&copy; 2019 NELL_JOY</p>
+        <a href="https://github.com/himlne01">
+          <img alt="github, Nell Himlie" src="../static/github.png"
+          width="40" height="40">
+       </a>
+    </footer>
+    </div>
+  </body>
 </html>
