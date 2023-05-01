@@ -1,5 +1,5 @@
 gunicorn==20.0.4
-Flask==1.1.2
+Flask==2.3.2
 Flask-Cors==3.0.9
 flask-marshmallow==0.10.1
 psycopg2==2.8.5
